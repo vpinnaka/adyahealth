@@ -76,7 +76,9 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "adyahealth.users.apps.UsersConfig",
-    "administration.apps.AdminstrationConfig",
+    "administration.apps.AdministrationConfig",
+    "clinical.apps.ClinicalConfig",
+    "core.apps.CoreConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -138,6 +140,14 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost',
+    'http://adyahealth.com',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'localhost','adyahealth.com'
+]
 # STATIC
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#static-root
