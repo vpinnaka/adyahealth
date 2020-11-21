@@ -76,6 +76,6 @@ services:
     container_name: frontend
     build:
       context: .
-      dockerfile: /compose/production/frontend/Dockerfile
+      dockerfile: ./compose/production/frontend/Dockerfile
     ports:
       - '1337:80'
