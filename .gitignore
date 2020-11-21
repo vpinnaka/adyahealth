@@ -299,3 +299,5 @@ adyahealth/media/
 .env
 .envs/*
 !.envs/.local/
+.vscode/
+.devcontainer/
