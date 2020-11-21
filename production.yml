@@ -73,9 +73,19 @@ services:
       - production_postgres_data_backups:/backups:z
 
   frontend:
-    container_name: frontend
     build:
       context: .
-      dockerfile: ./compose/production/frontend/Dockerfile
+      dockerfile: ./compose/local/frontend/Dockerfile
+    image: adyahealth_local_frontend
+    container_name: frontend
+    depends_on:
+      - django
+    volumes:
+      - ./frontend:/app
+      # One-way volume to use node_modules from inside image
+      - /app/node_modules
     ports:
-      - '1337:80'
+      - "80:3000"
+    environment:
+      - NODE_ENV=production
+    command: npm start
