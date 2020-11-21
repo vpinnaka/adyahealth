@@ -294,8 +294,9 @@ adyahealth/media/
 
 .pytest_cache/
 
-
+.devcontainer/
 .ipython/
 .env
 .envs/*
 !.envs/.local/
+!.envs/.production/

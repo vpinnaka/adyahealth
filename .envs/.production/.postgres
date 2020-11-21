@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=adyahealth
+POSTGRES_USER=dMRcVEQMECQqjuDsQdMUnMPDrEFDaLZI
+POSTGRES_PASSWORD=hvARojY3cOslxW573IWAMY9FodsuaHFnZR9de7KemCOFYMh6dNc5h5AxpjVrzqGJ
